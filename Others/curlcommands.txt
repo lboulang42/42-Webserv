@@ -1,0 +1,5 @@
+
+//Test Server Names (Same Host:Port different host/server_names)
+curl --verbose --resolve otherexample.com:8080:127.0.0.1 http://otherexample.com:8080
+curl --verbose --resolve example.com:8080:127.0.0.1 http://example.com:8080
+curl --verbose --resolve example.com:8080:127.0.0.1 http://example.com:8080

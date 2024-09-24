@@ -1,0 +1,25 @@
+Rules default location :
+	server_names	name 
+	listen			host:port 
+	error(code)		path/to/error/page
+
+	allowed_methods GET|POST|DELETE
+	max_body		int(1, INT_MAX)
+	autoindex		on ou off
+	defaultpage		defaultpage.html
+	root			root/directory/of/location
+	upload			path/to/upload 
+	redirect	 	redirectpage/redirecturl
+	CGI				/path/to/CGI				.ext|.ext2|.ext3
+Rules Other Locations :
+
+location locationuri/under/root {
+	allowed_methods GET|POST|DELETE
+	max_body		int(1, INT_MAX)
+	autoindex		on ou off
+	defaultpage		defaultpage.html
+	root			root/directory/of/location
+	upload			path/to/upload 
+	redirect	 	redirectpage/redirecturl
+	CGI				/path/to/CGI				.ext|.ext2|.ext3
+}
